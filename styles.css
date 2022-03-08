@@ -25,7 +25,7 @@ body {
     font-size: 38px;
 }
 
-.menuButtons input{
+input{
     background: none;
     color: white;
     padding: 5px;
@@ -36,8 +36,46 @@ body {
     transition-duration: 0.4s;
 }
 
-.menuButtons input:hover{
+input:hover{
     background-color: blue;
     color: white;
 }
 
+.highscoreTable{
+    margin: 100px auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center; 
+}
+
+.highscorePoints{
+    text-align: center;
+    justify-content: center;
+}
+
+.headerHighscore input{
+    margin-left: 5px;
+}
+
+.highscoreTable h1{
+    color: white;
+    background: -webkit-linear-gradient(to right, #45fc45, #1dd0fd, #3a42b4);
+    background: linear-gradient(to right, #45fc45, #1dd0fd, #3a42b4);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+.highscorePoints {
+    font-size: 18px;
+    color: blue;
+}
+
+.highscorePoints span{
+    color: black;
+    font-size: 20px;
+}
