@@ -6,6 +6,8 @@
 body {
     background: url(background.jpg) no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .menuButtons{
@@ -126,4 +128,31 @@ input:hover{
     background: linear-gradient(gray, black);
     border: .25vmin solid black;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 1275px) {
+    .backButton{
+        left: auto;
+    }
+    
+    .score{
+        left: auto;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+    .gameBoard{
+        margin: 50px;
+    }
+    .backButton{
+        left: 30px;
+        top: 5px;
+    }
+
+    .score{
+        left: 300px;
+        top: 2px;
+    }
+
 }
