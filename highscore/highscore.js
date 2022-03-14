@@ -1,12 +1,13 @@
-let array = [{points: 2, name: "Valter"}, {points: 6, name: "Valters"}, {points: 3, name: "Valter3"}, {points: 3, name: "Valter5"}, {points: 10, name: "V"} ]
-let pointArray = []
-function testArray(){
+let array = []
+
+function displayArray(){
+    let retrivedData = localStorage.getItem("pointsArray");
+    array = (JSON.parse(retrivedData))
+    //sorts the array in decending order
+    array.sort(function(a, b){return b.points - a.points});
     
-   //sorts the array in decending order
-   array.sort(function(a, b){return b.points - a.points});
-    
-   let html = ``;
-   for (let index = 0; index < array.length; index++) {
+    let html = ``;
+    for (let index = 0; index < array.length; index++) {
        const element = array[index];
        html += 
        `
@@ -20,4 +21,4 @@ function testArray(){
 }
 
 
-testArray();
+displayArray();
