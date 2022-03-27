@@ -134,7 +134,6 @@ input:hover{
     .backButton{
         left: auto;
     }
-    
     .score{
         left: auto;
     }
@@ -155,4 +154,16 @@ input:hover{
         top: 2px;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+
+    .score{
+        left: 200px;
+        top: 2px;
+    }
+
+    .gameBoard{
+        margin-left: 20px;
+    }
 }
